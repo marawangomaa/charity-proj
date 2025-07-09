@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        
+        <div class="contentHeader">
+            <h2 class="text-center">مجالاتنا الاستشارية... خبرات متنوعة لخدمة الانسان</h2>
+            <section class="section-heading">
+                <div class="">
+                    <nav class="row d-flex justify-content-between g-2">
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <a class="btn btn-outline-gray w-100"><i class="bi bi-calendar2-week"></i>  كل مستشارين</a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <a class="btn btn-outline-gray w-100"><i class="bi bi-calendar2-week"></i>  اسم القسم</a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <a class="btn btn-outline-gray w-100"><i class="bi bi-calendar2-week"></i>  اسم القسم</a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <a class="btn btn-outline-gray w-100"><i class="bi bi-calendar2-week"></i>  اسم القسم</a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <a class="btn btn-outline-gray w-100"><i class="bi bi-calendar2-week"></i>  اسم القسم</a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <a class="btn btn-outline-gray w-100"><i class="bi bi-calendar2-week"></i>  اسم القسم</a>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="row contentCards">
+            @for (item of advisors; track $index) {
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <app-card-item [itemS]="item"></app-card-item>
+            </div>
+            }
+        </div>
+    </div>
+</div>
