@@ -134,7 +134,7 @@
                         <div class="appointment-info flex-grow-1 text-end px-3 py-2">
                             <span>الأربعاء | 1 يوليو 2025</span> <span class="ms-2">9:30 PM</span>
                         </div>
-                        <button type="button" class="btn btn-success px-4 py-2 rounded-start">أكد الحجز</button>
+                        <button type="button" (click)="onConfirmReservation()" class="btn btn-success px-4 py-2 rounded-start">أكد الحجز</button>
                     </div>
 
                 </div>
@@ -284,3 +284,7 @@
         </aside>
     </div>
 </div>
+
+@if (showPopup) {
+    <app-reservation-popup ></app-reservation-popup>
+}
